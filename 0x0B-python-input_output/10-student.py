@@ -3,7 +3,7 @@
 
 
 class Student:
-    """Symbolise student."""
+    """Symbolises student."""
 
     def __init__(self, first_name, last_name, age):
         """Activate new student.
@@ -20,11 +20,11 @@ class Student:
     def to_json(self, attrs=None):
         """Obtain dictionary symbol of the student.
 
-        If characteritsic is list of stri, symbolises just those characteristics
-        comprised in list.
+        If attrs is a list of strings, represents only those attributes
+        included in the list.
 
         Args:
-            attrs (list): (Optional) Characteristics to symbolise.
+            attrs (list): (Optional) The attributes to represent.
         """
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
